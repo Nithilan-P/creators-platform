@@ -1,30 +1,28 @@
 import { Link } from 'react-router-dom';
 
-const Register = () => {
+const Login = () => {
   return (
     <div style={containerStyle}>
       <div style={formContainerStyle}>
-        <h1 style={titleStyle}>Create Account</h1>
-        <p style={subtitleStyle}>Join {/* Your Platform Name */} today</p>
+        <h1 style={titleStyle}>Login</h1>
+        <p style={subtitleStyle}>Sign in to your account</p>
         
-        {/* Placeholder for registration form */}
+        {/* Placeholder for login form */}
         <div style={placeholderStyle}>
-          <p>Registration form will be implemented in a future lesson</p>
+          <p>Login form will be implemented in a future lesson</p>
           <p>This will include:</p>
           <ul style={listStyle}>
-            <li>Name input field</li>
             <li>Email input field</li>
             <li>Password input field</li>
-            <li>Confirm password field</li>
-            <li>Registration button</li>
+            <li>Login button</li>
             <li>Form validation</li>
           </ul>
         </div>
 
         <p style={linkTextStyle}>
-          Already have an account?{' '}
-          <Link to="/login" style={linkStyle}>
-            Login here
+          Don't have an account?{' '}
+          <Link to="/register" style={linkStyle}>
+            Register here
           </Link>
         </p>
       </div>
@@ -32,7 +30,6 @@ const Register = () => {
   );
 };
 
-// Use the same styles as Login page
 const containerStyle = {
   minHeight: '80vh',
   display: 'flex',
@@ -85,4 +82,4 @@ const linkStyle = {
   fontWeight: 'bold',
 };
 
-export default Register;
+export default Login;
